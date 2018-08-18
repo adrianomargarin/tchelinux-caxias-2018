@@ -5,4 +5,5 @@ python-decouple
 static3
 gunicorn
 psycopg2
+psycopg2-binary
 pytz

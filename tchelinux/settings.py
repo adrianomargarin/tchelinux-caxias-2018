@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tchelinux.core',
+    'tchelinux.event',
 ]
 
 MIDDLEWARE = [
