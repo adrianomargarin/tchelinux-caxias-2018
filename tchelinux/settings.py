@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tchelinux.core',
     'tchelinux.event',
+    'tchelinux.subscription',
 ]
 
 MIDDLEWARE = [

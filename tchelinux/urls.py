@@ -22,5 +22,6 @@ from tchelinux.core.views import home
 urlpatterns = [
     path('', home, name='home'),
     path('eventos/', include('tchelinux.event.urls', namespace='event')),
+    path('inscricoes/', include('tchelinux.subscription.urls', namespace='subscription')),
     path('admin/', admin.site.urls),
 ]
