@@ -11,6 +11,7 @@
         <th>Localização</th>
         <th>Data de início</th>
         <th>Data de fim</th>
+        <th>Inscrições</th>
       </tr>
     </thead>
     <tbody>
@@ -21,6 +22,7 @@
           <td>{{ obj.location }}</td>
           <td>{{ obj.start_date }}</td>
           <td>{{ obj.end_date }}</td>
+          <td><a href="{% url 'subscription:form' obj.pk %}">Inscrições</a></td>
         </tr>
       {% endfor %}
     </tbody>
