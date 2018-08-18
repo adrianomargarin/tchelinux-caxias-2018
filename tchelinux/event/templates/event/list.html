@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<div class="col-md-12">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Descrição</th>
+        <th>Localização</th>
+        <th>Data de início</th>
+        <th>Data de fim</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for obj in object_list %}
+        <tr>
+          <td>{{ obj.title }}</td>
+          <td>{{ obj.description }}</td>
+          <td>{{ obj.location }}</td>
+          <td>{{ obj.start_date }}</td>
+          <td>{{ obj.end_date }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}
